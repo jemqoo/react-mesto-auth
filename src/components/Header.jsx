@@ -13,7 +13,7 @@ function Header({ loggedIn, email }) {
 
   function onLogout() {
     setMenuActive(false);
-    localStorage.removeItem("jwt");
+    localStorage.removeItem("token");
     navigate("/sign-in");
   }
 
